@@ -1,0 +1,43 @@
+
+      body{
+        float: right;
+
+        padding-top:40px;
+      }
+
+
+      .formrange{
+        padding-top: 20px;
+        margin-left: 30%;
+        margin-right:30%;
+      }
+
+      .button{
+        border-radius:11px;
+        border-color:#8c8c8c;
+        background-color:#8c8c8c;
+        padding-top: 7px;
+        padding-right: 12px;
+        padding-bottom: 7px;
+        padding-left: 12px;
+        font-family: Arial;
+        font-size:18px;
+        font-weight: bold;
+              }
+
+       .box {
+        float: left;
+        height: 20px;
+        width: 30px;
+        margin-bottom: 15px;
+        border: 1px solid black;
+        clear: both;
+        font-weight: bold;
+        margin-top: 5px;
+        border-style: none;
+      }
+
+      .colorb {
+      background-color: white;
+
+      }

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="utf-8">
+    <title>Robot Arm</title>
+    <!-- BOOTSTRAP-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+     integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+    <div class="container">
+       <div class="row ">
+
+        <div class="formrange">
+
+      <form class="form_all" action="index.php" method="post">
+
+        <label for="motor1">محرك 1 </label>
+        <input type="range"  min="0" max="180" id="m1" name="m1" onchange="updateTextInput1(this.value);">
+        <input type="text" id="textInput1" value="90" class="box colorb" style="border-style: none;">
+
+
+          <br>
+
+          <label for="motor2">محرك 2 </label>
+          <input type="range" min="0" max="180" id="m2" name="m2" onchange="updateTextInput2(this.value);">
+          <input type="text" id="textInput2" value="90" class="box colorb" style="border-style: none;">            <br>
+            <br>
+            <label for="motor3">محرك 3 </label>
+            <input type="range" min="0" max="180" id="m3" name="m3" onchange="updateTextInput3(this.value);">
+            <input type="text" id="textInput3" value="90" class="box colorb" style="border-style: none;">
+              <br>
+  <br>
+              <label for="motor4">محرك 4 </label>
+              <input type="range" min="0" max="180" id="m4" name="m4" onchange="updateTextInput4(this.value);">
+              <input type="text" id="textInput4" value="90" class="box colorb" style="border-style: none;">
+              <br>
+  <br>
+              <label for="motor5">محرك 5 </label>
+              <input type="range"  min="0" max="180" id="m5" name="m5" onchange="updateTextInput5(this.value);">
+              <input type="text" id="textInput5" value="90" class="box colorb" style="border-style: none;">
+              <br>
+  <br>
+              <label for="motor6">محرك 6 </label>
+              <input type="range"  min="0" max="180" id="m6" name="m6" onchange="updateTextInput6(this.value);">
+              <input type="text" id="textInput6" value="90" class="box colorb" style="border-style: none;">
+              </div>
+              <br>
+                <br>
+
+              <div class="row">
+              <div class="col-xs-6 col-md-5">
+              <input type="submit" name="save" value="تحفظ" class="button" id="save">
+              <input type="button" name="run" value="تشغيل" class="button" id="run" onclick="onoff();">
+              </div>
+              </div>
+    </form>
+   </div>
+   </div>
+
+  </body>
+</html>
